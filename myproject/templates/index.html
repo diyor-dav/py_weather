@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Display</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather in {{ title }}</h1>
+        <div class="weather">
+            <div class="weather-info">
+                <h2>{{ description }}</h2>
+                <p class="temperature">{{ temperature }}°C</p>
+                <p>Feels like: {{ feels_like }}°C</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
